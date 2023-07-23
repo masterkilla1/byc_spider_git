@@ -1,0 +1,56 @@
+{
+    "real_interval":{
+        "time":1,
+        "explain":"默认取数间隔"
+    },
+
+    "delete_out_of_days":{
+        "delete_days":30 ,
+        "loop_days":1,
+        "explain":"delete_days为删除多少天前的数据，loop_days为该程序几天运行一次！"
+    },
+    "root_directory":{
+        "root": "D:\\gmo_pic",
+        "explain":"给个根路径,选择存哪个盘必须要带\\，不然会存入该程序的根目录哦"
+    },
+    "gmo_pic_type": [
+        {
+            "type": "FY4A_true_color",
+            "url" : "http://www.nmc.cn/publish/satellite/FY4A-true-color.htm"
+        },
+        {
+            "type": "FY4A_infrared",
+            "url" : "http://www.nmc.cn/publish/satellite/FY4A-infrared.htm"
+        },
+        {
+            "type": "FY4A_visible",
+            "url" : "http://www.nmc.cn/publish/satellite/FY4A-visible.htm"
+        },
+        {
+            "type": "FY4A_water_vapour",
+            "url" : "http://www.nmc.cn/publish/satellite/FY4A-water-vapour.htm"
+        },
+
+        {
+            "type": "1_hour_precipitation",
+            "url" : "http://www.nmc.cn/publish/observations/hourly-precipitation.html"
+        },
+        {
+            "type": "leidalinzhi",
+            "url" : "http://www.nmc.cn/publish/radar/xi-cang/lin-zhi.htm"
+        }
+
+    ],
+    "point":[
+        {
+            "name":"墨脱地区中央气象台数据",
+            "station_id":"56319"
+        },
+        {
+            "name": "测试站点",
+            "station_id":"1000"
+        }
+
+],
+    "explain":"每time取一次，依次为站名、发布时间、json文件、本时段没有就不写。"
+}
